@@ -6,8 +6,8 @@ This is a repo for researching object detection tricks
 [Notes1](https://www.cnblogs.com/MY0213/p/9460562.html)
 [Notes2](https://segmentfault.com/a/1190000016138673)
 RCNN->SppNET->Fast-RCNN->Faster-RCNN
-1. Region Proposal method
-1.1 Sliding Window(brute force)
+### 1. Region Proposal method
+#### 1.1 Sliding Window(brute force)
 Use windows with different size to scan the imgae from up to donw, left to right
 pseudocode：
 ```python
@@ -15,7 +15,7 @@ for window in windows:
 	patch = fetch_patch(image, window)
 	results = detector(patch)
 ```
-1.2 Selective Search
+#### 1.2 Selective Search
 region proposal method
 ROI region of interest
 [selective search Paper](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) [Notes](https://blog.csdn.net/guoyunfei20/article/details/78723646)
@@ -31,5 +31,5 @@ size similarity,
 shape compatibility measure,
 
 		 
-1.3 R-CNN
+#### 1.3 R-CNN
 
