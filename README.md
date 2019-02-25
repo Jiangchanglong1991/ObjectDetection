@@ -16,10 +16,10 @@ for window in windows:
 	results = detector(patch)
 ```
 #### 1.2 Selective Search
-region proposal method
-ROI region of interest
-[selective search Paper](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) [Notes](https://blog.csdn.net/guoyunfei20/article/details/78723646)
-[Graph-Based Image Segmentation Paper](http://people.cs.uchicago.edu/~pff/papers/seg-ijcv.pdf) [Notes](https://blog.csdn.net/guoyunfei20/article/details/78727972)
+- region proposal method
+- ROI region of interest
+- [selective search Paper](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) [Notes](https://blog.csdn.net/guoyunfei20/article/details/78723646)
+- [Graph-Based Image Segmentation Paper](http://people.cs.uchicago.edu/~pff/papers/seg-ijcv.pdf) [Notes](https://blog.csdn.net/guoyunfei20/article/details/78727972)
 
 Firstly, form some regions using color similarity. 
 details: treat each image as a non-direction graph, distance between vertices are distance between pixels(I prefer HSV rather than RGB here). We set a Threshold to find MSTs(Minimum Spanning Tree) from them to form initial ROIs.
